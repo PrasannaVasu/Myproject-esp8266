@@ -8,8 +8,6 @@
 
 const char ssid[20]     = "Waiting";
 const char password[20] = "dracule mihawk";
-const char host[30] = "api.thingspeak.com";
-const char writeAPIKey[30] = "M3F8SR09YXXTVJ1G";
 
 DHT dht(DHTPIN, DHTTYPE, 15);
 
@@ -26,8 +24,7 @@ void setup() {
 }
 
 void loop() {
- Serial.println("fuck youuuu");
- printf("fuck meeee");
+
  float humidity = dht.readHumidity();
  float temperature = dht.readTemperature();
  float sm = analogRead(0);
