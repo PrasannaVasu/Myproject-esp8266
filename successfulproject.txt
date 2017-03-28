@@ -43,15 +43,7 @@ void loop() {
 //    return;
   }
 
-  String url = "/update?key=";
-  url+=writeAPIKey;
-  url+="&field1=";
-  url+=String(temperature);
-  url+="&field2=";
-  url+=String(humidity);
-  url+="&field3=";
-  url+=String(sm);
-  url+="\r\n";
+  
   
   // Request to the server
     if (WiFi.status() == WL_CONNECTED) { //Check WiFi connection status
